@@ -4,25 +4,35 @@
     box-sizing: border-box;
     
 }
+
 .header {
 
 padding: 10px 20px 10px 5px;
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
-background-color:rgb(70, 119, 243);
+background-color:#e3f2fd;
 }
 
 
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    display: flex;
+    position: relative;
+    padding: 10px 0;
+    color: rgb(2, 68, 90);
+}
 
 
 .title {
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 40px;
     color:black;   
-    background-color: rgb(255, 254, 254); 
-    padding:5px 10px 5px 30px;
-    margin-left:-11px;
+    background-color: #e3f2fd; 
+    border: rgb(0, 0, 0) 1px solid;
+    padding: 0px 10px;
+
 }
 .nav ul{
     display: flex;
@@ -32,117 +42,126 @@ background-color:rgb(70, 119, 243);
 }
  
 .nav ul li a{
-font-size: 24px;
+font-size: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 40px;
     padding-top: 5px;
-    color:  white;
-    font-weight: lighter;
+    color:  rgb(2, 68, 90);
+    font-weight:bold;
     
 }
    
 .hero {
     background-image:url("../images/hero.png");
-    background-size: cover;
+   
     display: flex;
-    position: relative;
     
-    height: 600px;
+    
+    height: 800px;
 }
-.picture img{
+.container{
+    display:flexbox;
+    position: relative;
+    justify-content: center;
+    left:10px;
+   
+    
+    
+}
+.container img{
+    height: 150px;
+    
+}
+.container p{
+    font-size: 90px;
+    font-weight: arial;
+    color:rgb(252, 252, 252);
+    margin-bottom: 100px;
+}
+.btn {
+    font-size: 30px;
+    color: white;
+}
+#btn-container{
+    margin:10px;
+}
+
+/*.picture img{
     height: 246px;
     left: 620px;
-    position: absolute;
+    position: relative;
     top: 117px;
     border-radius: 120px;
     margin: 2px;
     border: honeydew solid 1px;
 
 }
-.picture img:hover{
-    height:346px;
 
-}
-.hero h2 {
-    position: absolute;
-    top: 384px;
-    left: 650px;
-    color: rgb(13, 26, 100);
-    
+*/
+
+#About-me{
+ position: relative;
+ display: flexbox;
+ justify-content: center;
+    background-color: rgb(223, 253, 250);
+    background-size: cover;
+    margin: auto;
+    height: 800px;
    
-    background-color: rgb(158, 226, 248);
-    font-size: 24px;
+}
+
+
+.aboutMeTitle{
+    font-size: 70px;
+    color: black;
     padding: 10px;
-    height: 52px;
-    border: honeydew solid 1px;
-}
-.about {
-display: flex;
-justify-content:space-between;
-flex-wrap: wrap;
-margin: 30px 0;
+
 
 }
-.about div {
-    border-right: rgb(16, 27, 51) solid 6px;
-    width: 216px;
-    height: 200px;
-    position: relative;
-    top: 22px;
-    
+.title-box{
+    margin: 20px 0 ;
 }
-.about div h3 {
-    font-size: 50px;
-    color: rgb(37, 192, 50);
-    padding: 20px 10px 0 50px;
-}
-.about p {
+.info{
     font-size: 25px;
-    font-weight: lighter;
-    padding: 20px;
-    color: rgb(16, 27, 51);
-    width:1300px;
+    margin: 0px 20px;
 }
-.work-cont {
-display: flex;
-margin: 5px;
-flex-wrap: wrap;
 
+
+
+
+.work-cont {
+    position: relative;
+    display: flexbox;
+    justify-content: center;
+       background-color: rgb(223, 253, 250);
+       background-size: cover;
+       margin: auto;
+       height: 800px;
+      
 }
 .work-cont div h4 { 
     font-size: 50px;
-    color: rgb(37, 192, 50);
-    border-right: rgb(16, 27, 51) solid 6px;
-    height: 610px;
-    width: 165px;
-    margin: 80px 0px 40px 46px;
+    color: black;
+
+   
 }
-}
-.work-cont div {
-    
-    width: 216px;
-    height: 200px;
-    position: relative;
-    top: 22px;
-    
-    
-    
-}
+
+
 
 .grid-container {
   display: grid;
   grid-template-columns:repeat(3,400px) ;
   grid-template-rows: repeat(3,200px);
   grid-column-gap:10px ;
-  margin: 80px 0 20px 90px ;
+  
 
 
 }
 .grid-container > .grid-item {
-    background-color: blue;
-    border: 5px solid black;
+    background-color: rgb(87, 255, 191);
+    border: 2px solid rgb(255, 255, 255);
     padding: 30px;
     color: black;
     margin: 5px 0;
@@ -301,22 +320,43 @@ h10 {
 span {
     font-size: 15px;
 }
- 
-    
-
-.contact {
-    display: flex;
-justify-content:space-between;
-flex-wrap: wrap;
-margin: 30px 0;
+.text-pic{
+    display: inline-block;
 }
-.contact h5 { 
-    font-size: 50px;
-    color:  rgb(37, 192, 50);
-    padding: 20px 10px 0 50px;
-    border-right: rgb(16, 27, 51) solid 6px;
-    margin-left: -17px;
+.text-pic img{
+    
+    height: 246px;
+    
+  
+    justify-content: center;
+    border-radius: 120px;
+    margin: 2px;
+    border: honeydew solid 1px;
 
+}
+.text-pic img:hover{
+    height:346px;
+
+}
+.contact {
+    background-color: rgb(223, 253, 250);
+    display: flexbox;
+    justify-content: center;
+      
+       
+       margin: auto;
+       height: 800px;
+
+}
+.contact h4 { 
+    font-size: 50px;
+    color:  rgb(16, 16, 16);
+    float: left;
+    
+}
+.contact a img{
+height: 200px;
+margin: 10px;
 }
 .social a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -324,9 +364,9 @@ margin: 30px 0;
     justify-content:center;
     color: rgb(17, 14, 189);
     font-size:25px;
-   margin-left: 180px;
-   margin: 30px 10px 30px 120px;
+
 }
 .social{
-    margin: 30px 20px 30px 20px;
+    margin: 20px;
+    display: inline;
 }
