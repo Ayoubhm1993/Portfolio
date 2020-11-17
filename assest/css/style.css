@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     
+    
 }
 
 .header {
@@ -59,7 +60,7 @@ font-size: 30px;
     display: flex;
     
     
-    height: 800px;
+    height: 1000px;
 }
 .container{
     display:flexbox;
@@ -75,10 +76,11 @@ font-size: 30px;
     
 }
 .container p{
-    font-size: 90px;
+    font-size: 100px;
     font-weight: arial;
     color:rgb(252, 252, 252);
     margin-bottom: 100px;
+    text-shadow: gold;
 }
 .btn {
     font-size: 30px;
@@ -108,7 +110,7 @@ font-size: 30px;
     background-color: rgb(223, 253, 250);
     background-size: cover;
     margin: auto;
-    height: 800px;
+    height: 1000px;
    
 }
 
@@ -147,6 +149,12 @@ font-size: 30px;
 
    
 }
+.work-container{
+    display: flexbox;
+    justify-self: start;
+    
+    
+}
 
 
 
@@ -155,6 +163,8 @@ font-size: 30px;
   grid-template-columns:repeat(3,400px) ;
   grid-template-rows: repeat(3,200px);
   grid-column-gap:10px ;
+  justify-content: flex-start;
+  position: relative;
   
 
 

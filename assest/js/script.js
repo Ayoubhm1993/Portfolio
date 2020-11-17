@@ -20,6 +20,7 @@ function aboutMe (){
 
 function work(){
     body.innerHTML=`<section id="Work" class="work-cont">
+    <div class="work-container" >
     <div>
     <p class='text-center aboutMeTitle'>Work</p>
    </div>
@@ -31,6 +32,7 @@ function work(){
        <div class="grid-item grid-item-5"><a href="https://ayoubhm1993.github.io/Run-Buddy/"><img src="./assest/images/run-buddy.jpg" alt="run-buddy"/></a><h10>Run Buddy </br><span>Html/css</span></h10></div>
    
    </div>
+   </div>
    </section>`
 }
 function contactMe(){
@@ -39,7 +41,7 @@ function contactMe(){
     <div class="social">
        <a href="#"><img class="email" src='./assest/icones/gmail.png'>Ayoubhm1993@gmail.com</img></a></br>
       <a href="https://github.com/Ayoubhm1993"><img src='./assest/icones/github.png'>Ayoubhm1993</img></a></br>
-      <a href="https://www.linkedin.com/in/ayoub-hammouch-aa9a701b6/"><img src='./assest/icones/linkedin.png'></img></a>
+      <a href="https://www.linkedin.com/in/ayoub-hammouch-aa9a701b6/"><img src='./assest/icones/linkedin.png'>Linkedin</img></a>
       
     </div>
     </section>`
